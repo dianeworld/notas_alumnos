@@ -15,9 +15,17 @@ alumnos = {
     'Diana': 6.8
 }
 
+# Nueva funcionalidad: Calcular la media de las notas
+def calcular_media(diccionario):
+    return sum(diccionario.values()) / len(diccionario)
+
 # Mostrar la lista de alumnos y sus notas
 print('Lista de alumnos y sus notas:')
 for alumno, nota in alumnos.items():
     print(f'{alumno}: {nota}')
 
+
+# Mostrar la nota media
+media = calcular_media(alumnos)
+print(f'\nNota media del grupo: {media:.2f}')
 
